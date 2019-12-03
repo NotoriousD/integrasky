@@ -400,6 +400,7 @@ body {
         padding: 30px;
         padding-top: 0;
         padding-bottom: 60px;
+        position: relative;
         img{
            max-width: 100%;
            position: absolute;
@@ -414,7 +415,7 @@ body {
         }
         &:last-child{
             img{
-                top: -10px;
+                top: -45px;
             }
         }
     }
