@@ -181,6 +181,13 @@ b, strong {
 		line-height: 20px;
 		text-decoration: none;
 		width: 100%;
+		img{
+			width: 98px;
+			height: 98px;
+		}
+	}
+	.drop-link__text{
+		width: 60%;
 	}
 	.mnu__col{
 		display: flex;
