@@ -1,7 +1,6 @@
 @import "vars";
 @import "fonts";
 @import "libs";
-
 body {
   font-size: 16px;
   min-width: 320px;
@@ -120,7 +119,7 @@ body {
 
 $poss-first: #f76840;
 $poss-second: #fcc300;
-$poss-third: #bdec48;
+$poss-third: #b3d833;
 $poss-fourth: #01c4c8;
 
 .home-possibility {
@@ -292,6 +291,7 @@ $poss-fourth: #01c4c8;
     font-weight: 400;
     text-transform: uppercase;
     line-height: 20px;
+    padding-left: 30px;
   }
   .mikrotik__img {
     width: 50%;
@@ -425,7 +425,7 @@ $poss-fourth: #01c4c8;
     color: #6b6f7a;
     font-size: 15px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 22px;
     margin-bottom: 20px;
     position: relative;
     z-index: 1;
@@ -655,7 +655,7 @@ $poss-fourth: #01c4c8;
       border-radius: 5px;
       border: 0;
       color: #ffffff;
-      font-size: 13px;
+      font-size: 16px;
       font-weight: 400;
       line-height: 40px;
       text-transform: uppercase;
@@ -709,9 +709,9 @@ $poss-fourth: #01c4c8;
     width: 32%;
   }
   .site__title {
-    font-size: 30px;
-    line-height: 40px;
-    &:before{
+    font-size: 40px;
+    line-height: 50px;
+    &:before {
       top: 20px;
     }
   }
@@ -811,8 +811,9 @@ $poss-fourth: #01c4c8;
     color: #ffffff;
     font-size: 50px;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 60px;
     position: relative;
+    margin-bottom: 25px;
     &:before {
       content: "";
       position: absolute;
@@ -825,13 +826,14 @@ $poss-fourth: #01c4c8;
   }
   .block__text {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 400;
     line-height: 26px;
     margin-bottom: 50px;
     text-transform: uppercase;
     span {
       color: #b3d833;
+      font-weight: 600;
     }
   }
   a {
@@ -875,9 +877,6 @@ $poss-fourth: #01c4c8;
 
 .linux-worklinux {
   padding: 100px 0;
-  background-image: url(../img/gridbg.png);
-  background-repeat: no-repeat;
-  background-position: 18% 95%;
   .section__title {
     margin-bottom: 100px;
   }
@@ -1028,7 +1027,7 @@ $poss-fourth: #01c4c8;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 15px;
+    padding: 0 30px;
   }
   .form__descr {
     width: 50%;
@@ -1079,6 +1078,7 @@ $poss-fourth: #01c4c8;
   .form__field {
     width: 25%;
     input[type="text"],
+    input[type="email"],
     input[type="tel"] {
       height: 60px;
       width: 100%;

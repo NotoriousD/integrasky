@@ -230,6 +230,9 @@ body {
     .work__title {
       margin-bottom: 40px;
     }
+    .list__item_text {
+      font-size: 12px;
+    }
   }
   @media (max-width: 450px) {
     .work__img {
@@ -439,7 +442,7 @@ body {
     color: #6b6f7a;
     font-size: 15px;
     font-weight: 400;
-    line-height: 21px;
+    line-height: 22px;
     display: block;
     padding-left: 30px;
   }
@@ -619,12 +622,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #f2f4f9;
-    font-size: 150px;
+    font-size: 180px;
     font-weight: 700;
     line-height: 22px;
     text-transform: uppercase;
-    display: block;
-    width: 902px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     letter-spacing: 80px;
   }
   .aswell__title {
@@ -633,7 +637,7 @@ body {
     padding: 100px 0;
     position: relative;
     color: #001f2f;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 700;
     line-height: 52px;
     text-transform: uppercase;
@@ -725,7 +729,7 @@ body {
     color: #ffffff;
     font-size: 15px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 22px;
   }
   @media (max-width: 1000px) {
     padding-top: 40px;
@@ -763,15 +767,18 @@ body {
 
 .service {
   padding: 100px 0;
+  background-image: url(../img/gridbg.png);
+  background-repeat: no-repeat;
+  background-position: 15% 60%;
   .service__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    padding-left: 230px;
     background-image: url(../img/control/block8bg.png);
     background-repeat: no-repeat;
-    background-position: left top;
-    padding-left: 340px;
+    background-position: 0 10px;
   }
   .service__descr {
     width: 300px;
@@ -826,6 +833,7 @@ body {
     }
   }
   @media (max-width: 1200px) {
+    background-image: none;
     .service__list {
       padding-left: 0;
       background-image: none;
@@ -838,6 +846,9 @@ body {
         max-width: 100%;
       }
     }
+  }
+  @media (max-width: 1000px) {
+    background-image: none;
   }
   @media (max-width: 800px) {
     .service__list {
@@ -1005,35 +1016,35 @@ body {
     }
   }
   .block__text {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 22px;
     display: block;
     color: #ffffff;
     span {
       color: #ffc527;
     }
   }
-  a{
-      width: 90%;
-      height: 46px;
-      background-color: #ffc527;
-      border-radius: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ffffff;
-      font-size: 13px;
-      font-weight: 400;
-      line-height: 40px;
-      text-transform: uppercase;
+  a {
+    width: 90%;
+    height: 46px;
+    background-color: #ffc527;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    margin-bottom: 30px;
+    &:hover {
+      background-color: darker(#ffc527, 10%);
       text-decoration: none;
-      transition: all .2s ease;
-      margin-bottom: 30px;
-      &:hover{
-        background-color: darker(#ffc527, 10%);
-        text-decoration: none;
-      }
+    }
   }
   @media (max-width: 1000px) {
     background-image: url(../img/microsoft/block3-bg.png);
@@ -1062,19 +1073,19 @@ body {
     .block__descr {
       padding-left: 0;
     }
-    a{
-        font-size: 11px;
-        width: 100%;
-        height: auto;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        line-height: 16px;
+    a {
+      font-size: 11px;
+      width: 100%;
+      height: auto;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      line-height: 16px;
     }
   }
-  @media (max-width: 400px){
-      a{
-          text-align: center;
-      }
+  @media (max-width: 400px) {
+    a {
+      text-align: center;
+    }
   }
 }
 
@@ -1141,7 +1152,8 @@ body {
   .form__field {
     width: 25%;
     input[type="text"],
-    input[type="tel"] {
+    input[type="tel"],
+    input[type="email"] {
       height: 60px;
       width: 100%;
       border: 0;

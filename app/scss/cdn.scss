@@ -280,6 +280,15 @@ body {
     top: 0;
     left: 45%;
   }
+  &:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-image: url(../img/cdn/bgblock.png);
+  }
   .inner {
     display: flex;
     flex-direction: row;
@@ -287,6 +296,8 @@ body {
   }
   .schema__descr {
     width: 50%;
+    position: relative;
+    z-index: 1;
   }
   .site__title {
     margin-bottom: 20px;
@@ -299,6 +310,7 @@ body {
     display: block;
     color: #6b6f7a;
     font-size: 15px;
+    line-height: 22px;
     font-weight: 400;
     margin-bottom: 100px;
   }
@@ -324,6 +336,7 @@ body {
     color: #6b6f7a;
     font-size: 15px;
     font-weight: 400;
+    line-height: 22px;
   }
   .info {
     display: block;
@@ -453,7 +466,7 @@ body {
     color: #6b6f7a;
     font-size: 15px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 22px;
     margin-bottom: 20px;
     position: relative;
     z-index: 1;
@@ -513,7 +526,7 @@ body {
     color: #6b6f7a;
     font-size: 15px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 22px;
   }
   .releab__img {
     display: flex;
@@ -643,7 +656,7 @@ body {
 		color: #6b6f7a;
 		font-size: 15px;
 		font-weight: 400;
-		line-height: 18px;
+		line-height: 22px;
 		margin-bottom: 20px;
 		position: relative;
 		z-index: 1;
@@ -768,7 +781,8 @@ body {
 
 .home-perfomance {
   padding: 100px 0;
-  background-image: url(../img/block5bg.png);
+  padding-bottom: 47px;
+  background-image: url(../img/cdn/block7bg.png);
   background-repeat: no-repeat;
   background-position: center bottom;
   .perform__list {
@@ -787,12 +801,17 @@ body {
     font-size: 30px;
     line-height: 40px;
     width: 100%;
+    margin-bottom: 72px;
+    &:before{
+      top: 20px;
+    }
   }
   .perform__text {
     display: block;
     color: #001f2f;
     font-size: 15px;
     font-weight: 400;
+    line-height: 22px;
     text-transform: uppercase;
     padding-left: 32px;
     margin-bottom: 110px;
@@ -839,7 +858,7 @@ body {
     color: #ffffff;
     font-size: 15px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 22px;
   }
   @media (max-width: 1000px) {
     background-image: none;
@@ -867,6 +886,9 @@ body {
     .site__title {
       font-size: 24px;
       line-height: 30px;
+      &:before{
+        top: 20px;
+      }
     }
   }
 }
@@ -954,7 +976,27 @@ body {
 		line-height: 26px;
 		text-transform: uppercase;
 		margin-bottom: 15px;
-	}
+  }
+  .aswell__item-text{
+    color: #6b6f7a;
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+  .as-pl{
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    color: #6b6f7a;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
 	ul{
 		margin: 0;
 		padding: 0;
@@ -962,7 +1004,8 @@ body {
 			list-style-type: none;
 			padding-left: 25px;
 			color: #001f2f;
-			font-size: 15px;
+      font-size: 15px;
+      line-height: 22px;
 			font-weight: 400;
 			margin-bottom: 5px;
 			position: relative;
@@ -1055,7 +1098,8 @@ body {
 				display: block;
 				color: #6b6f7a;
 				font-size: 15px;
-				font-weight: 400;
+        font-weight: 400;
+        line-height: 22px;
 			}
 		}
 	}
@@ -1104,7 +1148,13 @@ body {
 	}
 	.form__descr {
 	  width: 53%;
-	}
+  }
+  .form__text{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
 	.form__title {
 	  display: block;
 	  font-size: 40px;
@@ -1134,7 +1184,7 @@ body {
 	  color: #ffffff;
 	  font-size: 15px;
 	  font-weight: 400;
-	  line-height: 30px;
+	  line-height: 22px;
 	  text-transform: uppercase;
 	  border-bottom: 1px solid #ffffff;
 	  transition: all 0.2s ease;
@@ -1219,7 +1269,7 @@ body {
 		border-radius: 5px;
 		border: 0;
 		color: #ffffff;
-		font-size: 13px;
+		font-size: 15px;
 		font-weight: 400;
 		line-height: 40px;
 		text-transform: uppercase;

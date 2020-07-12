@@ -1,7 +1,6 @@
 @import "vars";
 @import "fonts";
 @import "libs";
-
 body {
 	font-size: 16px;
 	min-width: 320px;
@@ -10,18 +9,18 @@ body {
 	font-family: $default-font;
 	overflow-x: hidden;
 	color: $text;
-	input, textarea {
-		border: #666 1px solid;
-		outline: none;
-		&:focus:required:invalid {
-			border-color: red;
-		}
-		&:required:valid {
-			border-color: green;
-		}
+	input,
+	textarea {
+	  border: #666 1px solid;
+	  outline: none;
+	  &:focus:required:invalid {
+		border-color: red;
+	  }
+	  &:required:valid {
+		border-color: green;
+	  }
 	}
-}
-
+  }
 .home-banner{
 	background-color: #001f2f;
 	background-repeat: no-repeat;
@@ -629,6 +628,7 @@ body {
 		line-height: 100px;
 		letter-spacing: -10px;
 		display: block;
+		padding-left: 30px;
 	}
 	.site__title{
 		margin-bottom: 20px;
@@ -642,6 +642,7 @@ body {
 		font-size: 15px;
 		font-weight: 400;
 		line-height: 20px;
+		padding-left: 30px;
 	}
 	.reg__list{
 		display: flex;

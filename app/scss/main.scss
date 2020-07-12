@@ -1,7 +1,6 @@
 @import "vars";
 @import "fonts";
 @import "libs";
-
 body {
 	font-size: 16px;
 	min-width: 320px;
@@ -10,17 +9,18 @@ body {
 	font-family: $default-font;
 	overflow-x: hidden;
 	color: $text;
-	input, textarea {
-		border: #666 1px solid;
-		outline: none;
-		&:focus:required:invalid {
-			border-color: red;
-		}
-		&:required:valid {
-			border-color: green;
-		}
+	input,
+	textarea {
+	  border: #666 1px solid;
+	  outline: none;
+	  &:focus:required:invalid {
+		border-color: red;
+	  }
+	  &:required:valid {
+		border-color: green;
+	  }
 	}
-}
+  }
 
 .home-banner{
 	background-color: #001f2f;
@@ -518,6 +518,13 @@ body {
 		display: block;
 		margin-bottom: 15px;
 	}
+	.form__text2{
+		color: #ffffff;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 20px;
+		display: block;
+	}
 	.form__phone{
 		border: 1px solid #40c4f4;
 		display: flex;
@@ -971,15 +978,15 @@ body {
 		}
 		&:nth-child(4){
 			.icon{
-				background-image: url(../img/nutanix/block93.png);
+				background-image: url(../img/nutanix/block95.png);
 				background-repeat: no-repeat;
 				.num{
-					top: 50%;
-					transform: translateY(-50%);
-					right: -10px;
+					right: 24%;
+					bottom: -11px;
+					transform: translateX(-50%);
 				}
 				&:after{
-					left: -130%;
+					left: -100%;
 					transform: rotate(180deg);
 				}
 			}
@@ -1000,15 +1007,15 @@ body {
 		}
 		&:nth-child(6){
 			.icon{
-				background-image: url(../img/nutanix/block95.png);
+				background-image: url(../img/nutanix/block93.png);
 				background-repeat: no-repeat;
 				.num{
-					right: 24%;
-					bottom: -11px;
-					transform: translateX(-50%);
+					top: 50%;
+					transform: translateY(-50%);
+					right: -10px;
 				}
 				&:after{
-					left: -100%;
+					left: -130%;
 					transform: rotate(180deg);
 				}
 			}

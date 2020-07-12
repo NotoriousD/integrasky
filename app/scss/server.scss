@@ -3,24 +3,25 @@
 @import "libs";
 
 body {
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.65;
-	font-family: $default-font;
-	overflow-x: hidden;
-	color: $text;
-	input, textarea {
-		border: #666 1px solid;
-		outline: none;
-		&:focus:required:invalid {
-			border-color: red;
-		}
-		&:required:valid {
-			border-color: green;
-		}
-	}
-}
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.65;
+    font-family: $default-font;
+    overflow-x: hidden;
+    color: $text;
+    input,
+    textarea {
+      border: #666 1px solid;
+      outline: none;
+      &:focus:required:invalid {
+        border-color: red;
+      }
+      &:required:valid {
+        border-color: green;
+      }
+    }
+  }
 
 .home-banner{
 	background-color: #001f2f;
@@ -704,6 +705,7 @@ body {
         line-height: 100px;
         letter-spacing: -10px;
         margin-bottom: 10px;
+        padding-left: 30px;
     }
     .site__title{
         margin-bottom: 10px;
@@ -714,6 +716,7 @@ body {
         font-weight: 400;
         line-height: 22px;
         display: block;
+        padding-left: 30px;
     }
     .frost__img{
         position: relative;
@@ -895,6 +898,7 @@ body {
         line-height: 100px;
         letter-spacing: -10px;
         margin-bottom: 10px;
+        padding-left: 30px;
     }
     .add__list{
         display: flex;
@@ -1295,7 +1299,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
-        padding: 0 15px;
+        padding: 0 30px;
     }
     .form__descr{
         width: 47%;
@@ -1345,6 +1349,7 @@ body {
     .form__field{
         width: 25%;
         input[type='text'],
+        input[type='email'],
         input[type='tel']{
             height: 60px;
             width: 100%;

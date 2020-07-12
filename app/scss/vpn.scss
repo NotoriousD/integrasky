@@ -3,24 +3,25 @@
 @import "libs";
 
 body {
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.65;
-	font-family: $default-font;
-	overflow-x: hidden;
-	color: $text;
-	input, textarea {
-		border: #666 1px solid;
-		outline: none;
-		&:focus:required:invalid {
-			border-color: red;
-		}
-		&:required:valid {
-			border-color: green;
-		}
-	}
-}
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.65;
+    font-family: $default-font;
+    overflow-x: hidden;
+    color: $text;
+    input,
+    textarea {
+      border: #666 1px solid;
+      outline: none;
+      &:focus:required:invalid {
+        border-color: red;
+      }
+      &:required:valid {
+        border-color: green;
+      }
+    }
+  }
 
 .home-banner{
 	background-color: #001f2f;
@@ -409,12 +410,12 @@ body {
         }
         &:first-child{
             img{
-                top: -40px;
+                top: -45px;
             }
         }
         &:last-child{
             img{
-                top: -10px;
+                top: -40px;
             }
         }
     }
@@ -745,6 +746,7 @@ body {
     .form__field{
         width: 25%;
         input[type='text'],
+        input[type='email'],
         input[type='tel']{
             height: 60px;
             width: 100%;
@@ -901,6 +903,7 @@ body {
         text-transform: uppercase;
         position: relative;
         z-index: 1;
+        margin-bottom: 10px;
     }
     .feat__text{
         color: #6b6f7a;
@@ -973,7 +976,8 @@ body {
 }
 
 .home-perfomance{
-	padding: 100px 0;
+    padding: 100px 0;
+    padding-top: 0;
 	background-image: url(../img/vpn/perform.png);
 	background-repeat: no-repeat;
 	background-position: center bottom;
@@ -1001,8 +1005,8 @@ body {
         }
 	}
 	.site__title{
-		font-size: 30px;
-		line-height: 40px;
+		font-size: 40px;
+		line-height: 50px;
 	}
 	.perform__text{
 		display: block;

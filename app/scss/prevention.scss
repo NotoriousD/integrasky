@@ -1,33 +1,33 @@
 @import "vars";
 @import "fonts";
 @import "libs";
-
 body {
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.65;
-	font-family: $default-font;
-	overflow-x: hidden;
-	color: $text;
-	input, textarea {
-		border: #666 1px solid;
-		outline: none;
-		&:focus:required:invalid {
-			border-color: red;
-		}
-		&:required:valid {
-			border-color: green;
-		}
-	}
-}
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.65;
+    font-family: $default-font;
+    overflow-x: hidden;
+    color: $text;
+    input,
+    textarea {
+      border: #666 1px solid;
+      outline: none;
+      &:focus:required:invalid {
+        border-color: red;
+      }
+      &:required:valid {
+        border-color: green;
+      }
+    }
+  }
 
 .home-banner{
 	background-color: #001f2f;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-    padding-top: 165px;
+    padding-top: 240px;
 	.banner__list{
 		display: flex;
 		flex-direction: row;
@@ -421,6 +421,7 @@ body {
             left: 0;
             transform: translateY(-50%);
             z-index: 2;
+            box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.3);
         }
     }
     .num{
@@ -891,6 +892,8 @@ body {
             font-weight: 700;
             color: #000000;
             margin-top: 5px;
+            font-size: 20px;
+            line-height: 28px;
         }
     }
     @media (max-width: 900px){
@@ -996,6 +999,7 @@ body {
     .form__field{
         width: 25%;
         input[type='text'],
+        input[type='email'],
         input[type='tel']{
             height: 60px;
             width: 100%;

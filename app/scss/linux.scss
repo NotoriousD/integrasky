@@ -1,6 +1,5 @@
 @import "vars";
 @import "fonts";
-
 body {
 	font-size: 16px;
 	min-width: 320px;
@@ -9,17 +8,18 @@ body {
 	font-family: $default-font;
 	overflow-x: hidden;
 	color: $text;
-	input, textarea {
-		border: #666 1px solid;
-		outline: none;
-		&:focus:required:invalid {
-			border-color: red;
-		}
-		&:required:valid {
-			border-color: green;
-		}
+	input,
+	textarea {
+	  border: #666 1px solid;
+	  outline: none;
+	  &:focus:required:invalid {
+		border-color: red;
+	  }
+	  &:required:valid {
+		border-color: green;
+	  }
 	}
-}
+  }
 
 .home-banner{
 	background-color: #001f2f;
@@ -836,8 +836,8 @@ body {
 		}
 	}
 	.site__title{
-		font-size: 30px;
-		line-height: 40px;
+		font-size: 40px;
+		line-height: 50px;
 		&:before{
 			top: 20px;
 		}

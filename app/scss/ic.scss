@@ -1,27 +1,26 @@
 @import "vars";
 @import "fonts";
 @import "libs";
-
 body {
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.65;
-	font-family: $default-font;
-	overflow-x: hidden;
-	color: $text;
-	input, textarea {
-		border: #666 1px solid;
-		outline: none;
-		&:focus:required:invalid {
-			border-color: red;
-		}
-		&:required:valid {
-			border-color: green;
-		}
-	}
-}
-
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.65;
+    font-family: $default-font;
+    overflow-x: hidden;
+    color: $text;
+    input,
+    textarea {
+      border: #666 1px solid;
+      outline: none;
+      &:focus:required:invalid {
+        border-color: red;
+      }
+      &:required:valid {
+        border-color: green;
+      }
+    }
+  }
 .home-banner{
 	background-color: #001f2f;
 	background-repeat: no-repeat;
@@ -492,6 +491,7 @@ body {
     .form__field{
         width: 25%;
         input[type='text'],
+        input[type='email'],
         input[type='tel']{
             height: 60px;
             width: 100%;
@@ -597,7 +597,7 @@ body {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		align-items: center;
+		align-items: flex-start;
 		padding: 30px;
 		background-color: #f2f4f9;
 		border-radius: 5px;
@@ -615,7 +615,8 @@ body {
 	}
 	.workl__img{
 		width: 35%;
-		text-align: center;
+        text-align: center;
+        margin-top: 50px;
 		img{
 			max-width: 100%;
 		}
@@ -866,7 +867,8 @@ body {
 		align-items: center;
 		justify-content: space-between;
 		padding: 30px 0;
-		padding-right: 40px;
+        padding-right: 40px;
+        background-color: #fff;
 		&:after{
 			content: '';
 			position: absolute;
